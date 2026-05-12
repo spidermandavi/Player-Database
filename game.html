@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Game</title>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/game.css">
+  <link rel="stylesheet" href="css/board.css">
+</head>
+<body>
+
+<div class="game-layout">
+
+  <div class="board-section">
+    <div id="board"></div>
+  </div>
+
+  <div class="side-panel">
+
+    <div class="game-info">
+      <h2 id="playerDisplay"></h2>
+      <div id="openingName">Opening</div>
+      <div id="databaseStatus">Using player database</div>
+    </div>
+
+    <div class="controls">
+      <button id="abortBtn">Abort</button>
+      <button id="drawBtn">Offer Draw</button>
+      <button id="resignBtn">Resign</button>
+      <button id="flipBtn">Flip Board</button>
+    </div>
+
+    <div class="move-list" id="moveList"></div>
+
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chess.js@1.0.0-beta.8/dist/chess.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chessground@9.2.1/dist/chessground.min.js"></script>
+
+<script type="module" src="js/game.js"></script>
+</body>
+</html>
